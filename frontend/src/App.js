@@ -67,7 +67,9 @@ function App() {
   });
 
   const fetchData = async () => {
-    const { data } = await axios.get("/api/getting");
+    const { data } = await axios.get("api/getting");
+
+    console.log(data)
 
     setData(data[0]);
   };
